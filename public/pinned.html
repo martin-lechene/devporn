@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEVPORN</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        header {
+            background: url('https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        }
+        
+        .bannerFondo {
+            height: 400px;
+        }
+        
+        .bannerFooter {
+            height: 40px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+</head>
+
+<body class="bg-teal-500 md:bg-teal-300 lg:bg-teal-200">
+    <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+            <span class="font-semibold text-2xl tracking-tighter"><a href="index.html">DEVPORN</a></span>
+        </div>
+        <div class="block lg:hidden">
+            <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+              </button>
+        </div>
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+            <div class="text-sm lg:flex-grow">
+                <a href="404.html" class="block mt-4 sm:block md:block lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 sm:text-center md::text-center text-center text-2xl sm:text-2xl md:text-2xl lg:text-base">
+                  Lists
+                </a>
+                <a href="category.html" class="block mt-4 sm:block md:block lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 sm:text-center md::text-center text-center text-2xl sm:text-2xl md:text-2xl lg:text-base">
+                  Category
+                </a>
+                <a href="404.html" class="block mt-4 sm:block md:block lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 sm:text-center md::text-center text-center text-2xl sm:text-2xl md:text-2xl lg:text-base">
+                    Blog
+                  </a>
+            </div>
+            <div class="text-center sm:text-center md:text-center ">
+                <a href="add.html" class="animate-pulse inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0 text-2xl sm:text-2xl md:text-2xl lg:text-base">ADD</a>
+            </div>
+            <a href="#responsive-header" class="block mt-4 sm:block md:block lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 sm:text-center md::text-center text-center text-2xl sm:text-2xl md:text-2xl lg:text-base">
+                <div class="block text-lg bg-transparent text-white">
+                    <div class="flex items-center border-b border-b-2 border-teal-500 py-2">
+                        <input class="bg-transparent border-none mr-3 px-2 leading-tight focus:outline-none" type="text" placeholder="Search">
+                        <button type="submit" class="block right-0 top-0 mt-3 mr-4">
+                        <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" width="512px" height="512px">
+                            <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"/>
+                        </svg>
+                      </button>
+                    </div>
+                </div>
+            </a>
+            <div class="text-center sm:text-center md:text-center ">
+                <a href="login.html" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0 text-2xl sm:text-2xl md:text-2xl lg:text-base">LOGIN</a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="bg-indigo-900 text-center py-4 lg:px-4">
+            <div class="p-2 bg-indigo-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
+                <span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">NEW</span>
+                <span class="font-semibold mr-2 text-left flex-auto">For your next creative content and tips</span>
+                <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="bg-teal-100 text-gray-700 body-font">
+            <div class="container px-5 py-24 mx-auto flex flex-wrap">
+                <div class="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
+                    <div class="w-full sm:p-4 px-4 mb-6">
+                        <h1 class="title-font font-medium text-xl mb-2 text-gray-900">Moon hashtag pop-up try-hard offal truffaut</h1>
+                        <div class="leading-relaxed">Pour-over craft beer pug drinking vinegar live-edge gastropub, keytar neutra sustainable fingerstache kickstarter. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio unde nesciunt saepe quas, harum sequi repellat
+                            quibusdam quae? Perspiciatis, in?</div>
+                    </div>
+                    <div class="p-4 sm:w-1/2 lg:w-1/3 w-1/2">
+                        <h2 class="title-font font-medium text-3xl text-gray-900">150K</h2>
+                        <p class="leading-relaxed">Views</p>
+                    </div>
+                    <div class="p-4 sm:w-1/2 lg:w-1/3 w-1/2">
+                        <h2 class="title-font font-medium text-3xl text-gray-900">35K</h2>
+                        <p class="leading-relaxed">Downloads</p>
+                    </div>
+                    <div class="p-4 sm:w-1/2 lg:w-1/3 w-1/2">
+                        <h2 class="title-font font-medium text-3xl text-gray-900">4K</h2>
+                        <p class="leading-relaxed">Likes</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
+                    <img class="object-cover object-center w-full h-full" src="https://dummyimage.com/600x300" alt="stats">
+                </div>
+            </div>
+        </section>
+        <section class="bg-teal-200 text-gray-700 body-font">
+            <div class="container px-5 py-0 mx-auto flex flex-col">
+                <div class="flex flex-col sm:flex-row mt-1">
+                    <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                        <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-100 text-gray-600">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" class="w-10 h-10" viewBox="0 0 24 24">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+                        </div>
+                        <div class="flex flex-col items-center text-center justify-center">
+                            <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">John Doe</h2>
+                            <div class="w-20 h-1 bg-teal-500 rounded mt-2 mb-4"></div>
+                            <p class="text-base text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat consequuntur tempore esse atque nesciunt quibusdam!</p>
+                        </div>
+                    </div>
+                    <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left text-gray-600">
+                        <p class="leading-relaxed text-lg mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex placeat atque modi molestias iure eius impedit, voluptatum totam, quo minima, eum consectetur voluptatibus laudantium repudiandae voluptas saepe accusantium harum enim
+                            incidunt magnam eaque et.</p>
+                        <p class="leading-relaxed text-lg mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex placeat atque modi molestias iure eius impedit, voluptatum totam, quo minima, eum consectetur voluptatibus laudantium repudiandae voluptas saepe accusantium harum enim
+                            incidunt magnam eaque et. Corporis deleniti incidunt in, neque culpa vero non eum cupiditate eveniet dolores alias. Quia est laborum asperiores perferendis dolorum non, recusandae debitis at odio ullam dolorem nulla soluta
+                            fugit quidem ea aliquam saepe. Impedit sit ea dolores fuga praesentium rerum neque mollitia itaque? Architecto id consequatur deleniti! Neque at ratione omnis laboriosam non? Aperiam accusantium necessitatibus architecto officiis
+                            illum alias voluptate, ea, voluptas quibusdam quidem officia.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class=" text-gray-700 body-font bg-teal-300">
+            <div class="container px-5 py-24 mx-auto flex items-center md:flex-row flex-col ">
+                <div class="flex flex-col md:pr-0 md:mb-0 mb-6 pr-0 w-full md:w-auto md:text-left text-center">
+                    <h2 class="text-xs text-indigo-600 tracking-widest font-medium title-font mb-1">DOWNLOAD</h2>
+                    <h1 class="md:text-3xl text-2xl font-medium title-font text-gray-700">You want try or use that ?</h1>
+                </div>
+                <div class="flex md:ml-auto md:mr-0 mx-auto items-center flex-shrink-0">
+                    <button class="bg-gray-200 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-300 focus:outline-none">
+                  <span class="ml-0 flex items-start flex-col leading-none">
+                    <span class="title-font font-medium">Website</span>
+                  </span>
+                </button>
+                    <button class="bg-red-500 inline-flex py-3 px-5 rounded-lg items-center ml-4 hover:bg-red-400 focus:outline-none">
+                  <span class="ml-0 flex items-start flex-col leading-none">
+                    <span class="title-font font-medium text-white">Download</span>
+                  </span>
+                </button>
+                </div>
+            </div>
+        </section>
+        <section class="text-gray-700 body-font bg-teal-400">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-wrap -m-4 text-center">
+                    <div class="p-4 sm:w-1/3 w-1/2">
+                        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">2.7K</h2>
+                        <p class="leading-relaxed">Views</p>
+                    </div>
+                    <div class="p-4 sm:w-1/3 w-1/2">
+                        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">1.8K</h2>
+                        <p class="leading-relaxed">Downloads</p>
+                    </div>
+                    <div class="p-4 sm:w-1/3 w-1/2">
+                        <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">35</h2>
+                        <p class="leading-relaxed">Likes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
